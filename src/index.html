@@ -2,49 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
+    <meta name="viewport" 
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../src/assets/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/styles.css">
     <title>Nexcent</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="./assets/images/Logo.png" alt="Logo">
-        </div>
-        <div class="header__menu">
-            <ul class="header__menu-list">
-                <li class="header__menu-item">
-                     <a data-link="home">Home</a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./assets/images/Logo.png" alt="Logo">
+            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item--bold">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#">Feature</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#">Product</a>
                 </li>
                 <li class="header__menu-item">
-                    <a data-link="service">Service</a>
+                    <a href="#">Testimonial</a>
                 </li>
                 <li class="header__menu-item">
-                    <a data-link="feature">Feature</a>
+                    <a href="#">FAQ</a>
                 </li>
-                <li class="header__menu-item">
-                    <a data-link="product">Product</a>
-               </li>
-               <li class="header__menu-item">
-                   <a data-link="testimonial">Testimonial</a>
-               </li>
-               <li class="header__menu-item">
-                   <a data-link="faq">FAQ</a>
-               </li>
-            </ul>        
-        </div>
-        <div class="header__login">
-            <button class="header_button-login">Login</button>
-            <button class="header_button-sign-up">Login</button>
-        </div>
+                </ul>        
+            </nav>
+            <div class="header__login">
+                <a class="header_button-login" href="#">Login</a>
+                <a class="header_button-sign-up" href="#">Sign up</a>
+            </div>
+        </header>
 
-        <p>Test</p>
-    </header>
-
+        <section class="hero-section">
+            <div class="hero-frame">
+                <div class="hero__text">
+                    <div class="hero__h">
+                        <div class="title-lessons">Lessons and insights</div>
+                        <div class="title-years">from 8 years</div>
+                    </div>
+                    <p>Where to grow your business as a photographer: site or social media?</p>                    
+                </div>
+                <a class="big-button" href="#">Register</a>
+            </div>
+            <img src="/src/assets/images/Illustration.png" alt="Hero Section ilustration" class="main-image">            
+            
+        </section>
+        <section class="dots">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <circle cx="5" cy="5" r="5" fill="#4CAF4F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <circle opacity="0.3" cx="5" cy="5" r="5" fill="#4CAF4F"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <circle opacity="0.3" cx="5" cy="5" r="5" fill="#4CAF4F"/>
+            </svg>
+        </section>
+    </div>
    
 
 
