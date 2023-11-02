@@ -73,6 +73,10 @@ a:link{
     padding: 10px 20px;
     align-items: center;
 }
+.home {
+    font-family: 'Inter', sans-serif;
+    gap: 40px;
+}
 .hero-section {
     background: #F5F7FA;
     width: auto 1152px;
@@ -111,6 +115,7 @@ a:link{
     color: #4CAF4F;  
 }
 .p {
+    width: 100% 657px;
     color: #717171;
     font-size: 16px;
     font-weight: 400;
@@ -139,5 +144,88 @@ a:link{
     display: flex;
     justify-content: center;
     gap: 8px;
-
+    margin-top: -58px;
+}
+.clients {
+    margin-top: 58px;
+    text-align: center;
+    
+}
+.section-title {
+    display: flex;
+    justify-content: center;
+    color: #4D4D4D;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+}
+.clients-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comunity{
+    gap: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.comunity-text {
+    width: 542px;
+    gap: 8px;
+}
+div.comunity-frame {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;    
+}
+.comunity-membership {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.20);
+    display: flex;
+    width: 299px;
+    padding: 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+.comunity-national {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.20);
+    display: flex;
+    width: 299px;
+    padding: 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+.comunity-clubs {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.20);
+    display: flex;
+    width: 299px;
+    padding: 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+.comunity-image {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comunity-title {
+    color: #717171;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+}
+.comunity-text {
+    
 }
