@@ -7,16 +7,20 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #717171;
 }
 
 .header {
     background: #F5F7FA;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     height: 100%;
     max-height: 84px;
-    flex-shrink: 0;
+    padding-top: 10px;
 }
 
 .header__logo {
@@ -29,63 +33,71 @@ a:link{
 .header__menu-list {
     display: flex;
     list-style-type: none;
-    width: auto 588px;
-    height: auto 24px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     padding-left: 0;
 }
-.header__menu-item--bold {
-    font-family: 'Inter', sans-serif;
-    color: #18191F;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-}
+
 .header__menu-item {
-    font-family: 'Inter', sans-serif;
     color: #18191F;
-    font-size: 16px;
-    font-weight: 400;
     line-height: 150%;
 }
 
+.header__menu-item--bold {
+    font-weight: 500;
+}
+
 .header__login {
-    display: flex;
-    align-items: center;
+    display: flex;   
     gap: 14px;
-    font-family: 'Inter', sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 142.857%;
 }
-.header_button-login {
-    background: #F5F7FA;
-    color: #4CAF4F;
-    border: none;
+
+.button {
+    cursor: pointer;
+    transition: opacity 0.3s;
     display: flex;
-    padding: 10px 20px;
+    justify-content: center;
     align-items: center;
-}
-.header_button-sign-up {
     background: #4CAF4F;
     color: #FFF;
-    border-radius: 6px;
     border: none;
-    display: flex;
-    padding: 10px 20px;
-    align-items: center;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 14px 32px;
+    border-radius: 4px;
 }
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.header__login-grey {
+    background: #F5F7FA;
+    color: #4CAF4F;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.header__sign-in-green {
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
 .home {
-    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 40px;
 }
-.hero-section {
+.hero__section {
     background: #F5F7FA;
-    width: auto 1152px;
+    width: 100%;//Vai vajag?
+    max-width: 1152px;
     height: auto 407px;
     display: flex;
     flex-direction: row;
@@ -127,24 +139,13 @@ a:link{
     font-weight: 400;
     line-height: 150%;
 }
-.big-button {
-    display: flex;
-    padding: 14px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 4px;
-    background: #4CAF4F;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 150%;
-}
+
 .main-image {
-    width: 391px;
-    max-width: 100%;
-    height: 407px;
-    max-height: 100%;
+    width: 100%;
+    max-width: 391px;
+    height: 100%;
+    max-height: 407px;
+    aspect-ratio: 1/1;
 }
 .dots {
     display: flex;
