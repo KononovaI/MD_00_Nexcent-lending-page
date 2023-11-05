@@ -1,18 +1,24 @@
 * {
     box-sizing: border-box; /*Lai paddingi un borderi iekļautos ikviena elementa izmēros*/
 }
-.wrapper{
-    width: 1440px;
-    max-width: 100%;
+
+body {
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
+    background-color: #FFF;
 }
+
 .header {
     background: #F5F7FA;
     display: flex;
     justify-content: space-around;
-    height: 84px;
     align-items: center;
+    height: 100%;
+    max-height: 84px;
+    flex-shrink: 0;
 }
+
 .header__logo {
     display: flex;
     align-items: center;
@@ -167,17 +173,17 @@ a:link{
 .comunity{
     gap: 16px;
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 .comunity-text {
-    width: 542px;
-    gap: 8px;
+    width: 100%;
+    max-width: 542px;
+    column-gap: 8px;
 }
-div.comunity-frame {
+.comunity-frame {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    text-align: center;    
+    text-align: center;
+    padding: 0 114px;
 }
 .comunity-membership {
     border-radius: 8px;
@@ -227,5 +233,8 @@ div.comunity-frame {
     line-height: 20px;
 }
 .comunity-text {
-    
+    width: 100%;
+    flex-basis:50%;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
