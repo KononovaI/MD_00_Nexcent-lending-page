@@ -114,39 +114,35 @@ a:link{
     gap: 32px;
 }
 .hero__text {
-    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .hero__h {
-    width: 100% 657px;
-    height: 152px;
+    width: 100%;
+    max-width: 657px;
+    width: 100%;
+    max-height: 152px;
     font-size: 64px;
     font-weight: 600;
     line-height: 118.75%;
 }
+
 .title-lessons {
     color: #4D4D4D;  
 }
 .title-years {
     color: #4CAF4F;  
 }
-.p {
-    width: 100% 657px;
-    color: #717171;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 150%;
-}
 
-.main-image {
+.hero__image {
+    aspect-ratio: 391 / 407;
     width: 100%;
     max-width: 391px;
-    height: 100%;
-    max-height: 407px;
-    aspect-ratio: 1/1;
+    
 }
+
 .dots {
     display: flex;
     justify-content: center;
