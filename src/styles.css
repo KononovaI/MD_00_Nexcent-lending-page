@@ -468,6 +468,7 @@ a:link{
 
 .footer__bottom {
     background-color: #263238;
+    color: #F5F7FA;
     display: flex;
     padding: 64px 165px;
     align-items: flex-start;
@@ -490,6 +491,16 @@ a:link{
 
 .company-info__logo {
     display: flex;
-    align-items: center;
     gap: 9.891px;
+}
+
+.company-info__copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.company-info__social-links {
+    display: flex;
+    gap: 16px;
 }
