@@ -374,6 +374,10 @@ a:link{
     gap: 8px;
 }
 
+.clickable.text-box_title:hover {
+    opacity: 0.7;
+}
+
 .customers_frame_logo01 {
     aspect-ratio: 40 / 40;
     width: 100%;
@@ -405,10 +409,6 @@ a:link{
     max-width: 628px;
 }
 
-.box-for-image {
-    
-}
-
 .frame15__box {
     display: flex;
     flex-direction: column;
@@ -419,6 +419,7 @@ a:link{
 
 .box__image {
     aspect-ratio: 368 / 286;
+
 }
 .frame15__content {
     display: flex;
@@ -470,14 +471,14 @@ a:link{
     background-color: #263238;
     color: #F5F7FA;
     display: flex;
+    justify-content: space-between;
     padding: 64px 165px;
-    align-items: flex-start;
+    aspect-ratio: 1110/00;
     gap: 125px;
 }
 
 .bottom__about-company {
     display: flex;
-    padding: 64px 165px;
     align-items: flex-start;
     gap: 125px;
 }
@@ -503,4 +504,91 @@ a:link{
 .company-info__social-links {
     display: flex;
     gap: 16px;
+}
+
+.bottom__links {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.links__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.text-box_title--light{
+    color:#FFF;
+}
+
+.col1__listed-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.listed-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142.857%;
+    color: #F5F7FA;
+}
+
+.listed-item:hover {
+    opacity: 0.7;
+}
+
+.links__col-last {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.col-last__input-field {
+    display: inline-flex;
+    border-radius: 8px;
+    opacity: 0.2;
+    background: #FFF;
+}
+
+.inputam {
+    border-radius: 8px;
+    opacity: 0.2;
+}
+
+input {
+    color: #D9DBE1;
+}
+
+.placeholders-frame_old {
+    display: flex;
+    border-radius: 8px;
+    opacity: 0.2;
+    aspect-ratio: 255/40;
+    width: 100%;
+    max-width: 255px;
+    
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142.857%;
+    
+}
+
+.bullet {
+    display: flex;
+    
+    flex-shrink: 1 0 0;
+    border: none;
+    padding: 0;
+}
+
+.bullet:hover {
+    opacity: 0.2;
 }
