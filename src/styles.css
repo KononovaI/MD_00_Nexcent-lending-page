@@ -549,32 +549,21 @@ a:link{
 }
 
 .col-last__input-field {
-    display: inline-flex;
-    border-radius: 8px;
-    opacity: 0.2;
-    background: #FFF;
+    position: relative;
 }
 
-.inputam {
+.input {
     border-radius: 8px;
-    opacity: 0.2;
+    opacity: 0.7;
+    background-color: #717171;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
 }
 
-input {
+::-webkit-input-placeholder {
     color: #D9DBE1;
-}
-
-.placeholders-frame_old {
-    display: flex;
-    border-radius: 8px;
-    opacity: 0.2;
-    aspect-ratio: 255/40;
-    width: 100%;
-    max-width: 255px;
-    
-}
-
-::placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 142.857%;
@@ -582,13 +571,14 @@ input {
 }
 
 .bullet {
-    display: flex;
-    
-    flex-shrink: 1 0 0;
-    border: none;
-    padding: 0;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 1vh;;
+    left:18vw;
+    z-index: 2;
 }
 
 .bullet:hover {
-    opacity: 0.2;
+    opacity: 0.7;
 }
