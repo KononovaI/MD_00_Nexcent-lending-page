@@ -37,8 +37,7 @@ body {
 .header {
     background: #F5F7FA;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100%;
     max-height: 84px;
     padding-top: 20px;
@@ -73,23 +72,24 @@ a:link{
 }
 
 .header__login {
-    display: flex;   
+    display: flex;
+    align-items: flex-start;
     gap: 14px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 142.857%;
 }
 
 .button {
     cursor: pointer;
     transition: opacity 0.3s;
     text-align: center;
+    justify-content: center;
     background: #4CAF4F;
     color: #FFF;
     border: none;
     font-weight: 500;
-    padding: 14px 32px;
+    line-height: 142.857%;
+    text-wrap: nowrap;
     border-radius: 4px;
+    padding: 14px 32px;
     width: 100%;
     max-width: 159px;
 }
@@ -169,13 +169,18 @@ a:link{
 }
 
 .home__clients {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 144px;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .clients-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    aspect-ratio: 1152 / 98;
+    width: 100%;
+    max-width: 1152;
 }
 
 .home__comunity {
@@ -339,7 +344,6 @@ a:link{
     max-width: 748px;
     text-align: justify;
     font-weight: 500;
-    
 }
 
 .nd-inner-text-box {
@@ -348,20 +352,24 @@ a:link{
     gap: 8px;
 }
 
-.text-box_title{
+.text-box_title {
     color:#4CAF4F;
     font-size: 20px;
     font-weight: 600;
     line-height: 140%;
+    text-wrap: nowrap;
+    
 }
 
 .customers_frame14 {
     display: flex;
+    justify-content: space-between;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .customers_frame10 {
-    display:flex;
+    display: flex;
     align-items: center;
     gap: 41px;
     flex: 1 0 0;
@@ -370,8 +378,10 @@ a:link{
 .frame13 {
     display: flex;
     padding: 8px;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: end;
     gap: 8px;
+    flex: 1 0 0;
 }
 
 .clickable.text-box_title:hover {
@@ -443,6 +453,7 @@ a:link{
     font-size: 20px;
     font-weight: 600;
     line-height: 140%;
+    padding: 10px;
 }
 
 .footer__frame {
@@ -574,8 +585,9 @@ a:link{
     cursor: pointer;
     transition: opacity 0.3s;
     position: absolute;
-    top: 1vh;;
-    left:18vw;
+    top: 5px;;
+    left: 195px;
+    justify-content: end;
     z-index: 2;
 }
 
